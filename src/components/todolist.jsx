@@ -1,13 +1,11 @@
 import React from 'react'
-import ToDoForm from './todoform';
+import ToDoItem from './todoitem';
 
-const Todolist = () => {
-    const handleModifyToDos = (getNewlyCreatedToDoDetails) => {
-        console.log(getNewlyCreatedToDoDetails);
-    }
+const Todolist = (props) => {
+  
   return (
     <div>
-      <ToDoForm getNewlyCreatedToDoFromChild = {handleModifyToDos}/>
+      <ToDoItem/>
     </div>
   )
 }
